@@ -1,10 +1,9 @@
 <header>
   <div class="banner d-flex justify-content-center w-100">
-    <div class="myPic position-ab border-radius-50 top-12"></div>
-      
+    <h1 class="position-ab text-white font-4 bottom-10">{{titleDescribe}}</h1>
     <ul class="w-100 d-flex justify-content-center b-5 ul-link" *ngIf="hero">
-
-      <li *ngFor="let heroLink of hero.iconLink" ><a class=" border-1 border-radius-50 d-flex justify-content-center align-items-center w-3 h-3 mr-1" href="{{ heroLink.link }}"><i :class="{{ heroLink.class }} font-2"></i></a></li>
+      <li *ngFor="let heroLink of hero.iconLink"><a class=" border-1 border-radius-50 d-flex justify-content-center align-items-center w-3 h-3 mr-1  hover-transform"
+          href="{{ heroLink.link }}"><i :class="{{ heroLink.class }} font-2 text-white"></i></a></li>
     </ul>
 
   </div>
